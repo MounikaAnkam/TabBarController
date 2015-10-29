@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1216164B1A831BF40005CACF /* SharedInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1216164A1A831BF40005CACF /* SharedInfo.swift */; };
 		12BFB6D81A82EB9D00C9D644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFB6D71A82EB9D00C9D644 /* AppDelegate.swift */; };
-		12BFB6DA1A82EB9D00C9D644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFB6D91A82EB9D00C9D644 /* ViewController.swift */; };
 		12BFB6DD1A82EB9D00C9D644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12BFB6DB1A82EB9D00C9D644 /* Main.storyboard */; };
 		12BFB6DF1A82EB9D00C9D644 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12BFB6DE1A82EB9D00C9D644 /* Images.xcassets */; };
 		12BFB6E21A82EB9D00C9D644 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12BFB6E01A82EB9D00C9D644 /* LaunchScreen.xib */; };
 		12BFB6EE1A82EB9D00C9D644 /* TabBarControllerInCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFB6ED1A82EB9D00C9D644 /* TabBarControllerInCodeTests.swift */; };
+		12BFB6F81A82EBE800C9D644 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFB6F71A82EBE800C9D644 /* LeftViewController.swift */; };
+		12BFB6FA1A82EBF200C9D644 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFB6F91A82EBF200C9D644 /* RightViewController.swift */; };
+		12BFB6FC1A82EC7E00C9D644 /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 12BFB6FB1A82EC7E00C9D644 /* rain.png */; };
+		12BFB6FE1A82EC8500C9D644 /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 12BFB6FD1A82EC8500C9D644 /* snow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +30,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1216164A1A831BF40005CACF /* SharedInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedInfo.swift; sourceTree = "<group>"; };
 		12BFB6D21A82EB9D00C9D644 /* TabBarControllerInCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarControllerInCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BFB6D61A82EB9D00C9D644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12BFB6D71A82EB9D00C9D644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		12BFB6D91A82EB9D00C9D644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		12BFB6DC1A82EB9D00C9D644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12BFB6DE1A82EB9D00C9D644 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		12BFB6E11A82EB9D00C9D644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		12BFB6E71A82EB9D00C9D644 /* TabBarControllerInCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBarControllerInCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BFB6EC1A82EB9D00C9D644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12BFB6ED1A82EB9D00C9D644 /* TabBarControllerInCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerInCodeTests.swift; sourceTree = "<group>"; };
+		12BFB6F71A82EBE800C9D644 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		12BFB6F91A82EBF200C9D644 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		12BFB6FB1A82EC7E00C9D644 /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rain.png; sourceTree = "<group>"; };
+		12BFB6FD1A82EC8500C9D644 /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +85,16 @@
 		12BFB6D41A82EB9D00C9D644 /* TabBarControllerInCode */ = {
 			isa = PBXGroup;
 			children = (
+				12BFB6FD1A82EC8500C9D644 /* snow.png */,
+				12BFB6FB1A82EC7E00C9D644 /* rain.png */,
 				12BFB6D71A82EB9D00C9D644 /* AppDelegate.swift */,
-				12BFB6D91A82EB9D00C9D644 /* ViewController.swift */,
 				12BFB6DB1A82EB9D00C9D644 /* Main.storyboard */,
 				12BFB6DE1A82EB9D00C9D644 /* Images.xcassets */,
 				12BFB6E01A82EB9D00C9D644 /* LaunchScreen.xib */,
 				12BFB6D51A82EB9D00C9D644 /* Supporting Files */,
+				12BFB6F71A82EBE800C9D644 /* LeftViewController.swift */,
+				12BFB6F91A82EBF200C9D644 /* RightViewController.swift */,
+				1216164A1A831BF40005CACF /* SharedInfo.swift */,
 			);
 			path = TabBarControllerInCode;
 			sourceTree = "<group>";
@@ -193,6 +205,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				12BFB6DD1A82EB9D00C9D644 /* Main.storyboard in Resources */,
+				12BFB6FE1A82EC8500C9D644 /* snow.png in Resources */,
+				12BFB6FC1A82EC7E00C9D644 /* rain.png in Resources */,
 				12BFB6E21A82EB9D00C9D644 /* LaunchScreen.xib in Resources */,
 				12BFB6DF1A82EB9D00C9D644 /* Images.xcassets in Resources */,
 			);
@@ -212,7 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12BFB6DA1A82EB9D00C9D644 /* ViewController.swift in Sources */,
+				12BFB6F81A82EBE800C9D644 /* LeftViewController.swift in Sources */,
+				12BFB6FA1A82EBF200C9D644 /* RightViewController.swift in Sources */,
+				1216164B1A831BF40005CACF /* SharedInfo.swift in Sources */,
 				12BFB6D81A82EB9D00C9D644 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,8 +353,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TabBarControllerInCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -347,8 +365,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TabBarControllerInCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -405,6 +425,7 @@
 				12BFB6F31A82EB9D00C9D644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12BFB6F41A82EB9D00C9D644 /* Build configuration list for PBXNativeTarget "TabBarControllerInCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +434,7 @@
 				12BFB6F61A82EB9D00C9D644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

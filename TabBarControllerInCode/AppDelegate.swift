@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  TabBarControllerInCode
 //
-//  Created by Michael Rogers on 2/4/15.
-//  Copyright (c) 2015 Michael Rogers. All rights reserved.
+//  Created by Mounika Ankam on 2/4/15.
+//  Copyright (c) 2015 Mounika Ankam. All rights reserved.
 //
 
 import UIKit
@@ -12,10 +12,23 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var sharedInfo:SharedInfo = SharedInfo()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        var left:LeftViewController = LeftViewController()
+    
+        var mystory:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var right:RightViewController = mystory.instantiateViewControllerWithIdentifier("Righty") as RightViewController
+        
+        var tabBarController:UITabBarController = UITabBarController()
+        tabBarController.viewControllers = [left,right]
+        
+        self.window?.rootViewController = tabBarController
+        
+        self.window?.makeKeyAndVisible()
         return true
     }
 

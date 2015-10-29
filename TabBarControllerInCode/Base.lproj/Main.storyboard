@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Right View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Righty" id="vXZ-lx-hvc" customClass="RightViewController" customModule="TabBarControllerInCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,7 +16,83 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtA-ug-FeR">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Energize!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Energy Level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjj-UQ-xfW">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dnf-jz-VgA">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Power of Storyboards ..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmk-A6-uTw">
+                                <rect key="frame" x="90" y="72" width="220" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xmk-A6-uTw" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="0NC-lG-stI"/>
+                            <constraint firstItem="xmk-A6-uTw" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="52" id="3dV-46-lCV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dnf-jz-VgA" secondAttribute="trailing" constant="89" id="AnW-P9-ink"/>
+                            <constraint firstItem="dnf-jz-VgA" firstAttribute="top" secondItem="xmk-A6-uTw" secondAttribute="bottom" constant="47" id="N4s-BG-Onh"/>
+                            <constraint firstItem="dnf-jz-VgA" firstAttribute="leading" secondItem="Sjj-UQ-xfW" secondAttribute="trailing" constant="27" id="V6h-hk-C3p"/>
+                            <constraint firstItem="Sjj-UQ-xfW" firstAttribute="baseline" secondItem="dnf-jz-VgA" secondAttribute="baseline" id="YqO-vR-YHI"/>
+                            <constraint firstItem="LtA-ug-FeR" firstAttribute="top" secondItem="Sjj-UQ-xfW" secondAttribute="bottom" constant="8" symbolic="YES" id="cVM-ZR-2jJ"/>
+                            <constraint firstItem="LtA-ug-FeR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="155" id="ljX-iS-ubJ"/>
+                            <constraint firstItem="xmk-A6-uTw" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="qr5-9A-DUk"/>
+                            <constraint firstItem="xmk-A6-uTw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="74" id="w3k-pA-znR"/>
+                            <constraint firstItem="xmk-A6-uTw" firstAttribute="leading" secondItem="Sjj-UQ-xfW" secondAttribute="leading" id="xl2-u1-eaM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="LtA-ug-FeR"/>
+                                <exclude reference="Sjj-UQ-xfW"/>
+                                <exclude reference="dnf-jz-VgA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0NC-lG-stI"/>
+                                <exclude reference="qr5-9A-DUk"/>
+                                <exclude reference="xl2-u1-eaM"/>
+                                <exclude reference="YqO-vR-YHI"/>
+                                <exclude reference="cVM-ZR-2jJ"/>
+                                <exclude reference="ljX-iS-ubJ"/>
+                                <exclude reference="AnW-P9-ink"/>
+                                <exclude reference="N4s-BG-Onh"/>
+                                <exclude reference="V6h-hk-C3p"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="LtA-ug-FeR"/>
+                                <include reference="Sjj-UQ-xfW"/>
+                                <include reference="dnf-jz-VgA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0NC-lG-stI"/>
+                                <exclude reference="3dV-46-lCV"/>
+                                <include reference="qr5-9A-DUk"/>
+                                <exclude reference="w3k-pA-znR"/>
+                                <include reference="xl2-u1-eaM"/>
+                                <include reference="YqO-vR-YHI"/>
+                                <include reference="cVM-ZR-2jJ"/>
+                                <include reference="ljX-iS-ubJ"/>
+                                <include reference="AnW-P9-ink"/>
+                                <include reference="N4s-BG-Onh"/>
+                                <include reference="V6h-hk-C3p"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
